@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+    tools:context=".ui.MainActivity">
+
+   <ImageView
+       android:id="@+id/app_logo"
+       android:src="@drawable/applogo"
+       android:layout_width="300dp"
+       android:layout_height="100dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="60dp"
+       />
+
+   <TextView
+       android:layout_width="220dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/slogan"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginEnd="88dp"
+       android:layout_marginTop="140dp"
+       android:text="We Provide the best "
+       android:textStyle="bold|italic"
+       android:textColor="@color/colorPrimary"
+       />
+
+   <Button
+       android:id="@+id/login"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp"
+       android:background="@drawable/buttons"
+       android:textAllCaps="false"
+       android:text="Already Have an Account? Login"
+       android:textColor="@android:color/white"
+       android:textSize="15sp"/>
+
+   <Button
+       android:id="@+id/sign_up"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@id/login"
+       android:layout_marginBottom="5dp"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp"
+       android:background="@drawable/sign_up"
+       android:textAllCaps="false"
+       android:text="SignUp"
+       android:textColor="@android:color/white"
+       android:textSize="15sp"/>
+
+
+
+</RelativeLayout>
